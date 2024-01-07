@@ -17,7 +17,7 @@
         transform: scale(1);
     }
     50% {
-        transform: scale(1.5);
+        transform: scale(1.4);
     }
     100% {
         transform: scale(1);
@@ -40,11 +40,14 @@ Set more key frames between 0% and 100%. */
         transform: translateX(0);
     }
     25% {
-        transform: translateX(-50px);
+        transform: translateX(-15px);
+    }
+    50% {
+        transform: translateX(100px);
     }
 
     75% {
-        transform: translateX(50px);
+        transform: translateX(150px);
     }
 
     100% {
@@ -61,7 +64,7 @@ Set more key frames between 0% and 100%. */
 .todo-2-container .box{
     background-color: #dda15e;
     color: white;
-    animation: scaleUpDown 2s cubic-bezier(0.68, -0.55, 0.25, 2.00) infinite alternate;
+    animation: scaleUpDown 3s cubic-bezier(0.68, -0.55, 0.25, 2.00) infinite alternate;
 }
 
 /* Done: Create a transition that will raise the button up and will make it cast a shadow when you hover over the button */
