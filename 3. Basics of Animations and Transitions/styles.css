@@ -11,25 +11,66 @@
     font-size: 24px;
 }
 
-/* Todo 3.0: Create an animation that increases and decreases the scale of the box  */
-.todo-0-container .box{
-    /* Apply animation here */
+/* DONE: Create an animation that increases and decreases the scale of the box  */
+@keyframes scaleUpDown {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
-/* Todo 3.1: Create an animation that moves the box left and right.
+
+.todo-0-container .box{
+    animation: scaleUpDown 2s ease-in-out infinite alternate;
+    background-color: #283618;
+    color: white;
+}
+
+/* DONE: Create an animation that moves the box left and right.
 Start with using "from" and "to". Now use "0%" and "100%" as your key frames.
 Set more key frames between 0% and 100%. */
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-50px);
+    }
+
+    75% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 .todo-1-container .box{
-    /* Apply animation here */
+    animation: moveLeftRight 4s infinite;
+    background-color: #606c38;
+    color: white;
 }
 
-/* Todo 3.2: Try the different timing funcitons such as linear, ease-in, ease-in-out, cubic-bezier, and steps*/
+/* DONE: Try the different timing funcitons such as linear, ease-in, ease-in-out, cubic-bezier, and steps*/
 .todo-2-container .box{
-    /* Apply animation here */
+    background-color: #dda15e;
+    color: black;
+    animation: scaleUpDown 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite alternate;
 }
 
-/* Todo 3.3: Create a transition that will raise the button up and will make it cast a shadow when you hover over the button */
+/* Done: Create a transition that will raise the button up and will make it cast a shadow when you hover over the button */
 /* bonus: apply the transition on the box shadow with different duration and timing function. This should all be in one line*/
 .todo-3-container button{
-    /* Apply transition here */
+    transition: transform 0.3s ease-out, box-shadow 0.5s linear;
+}
+
+.todo-3-container button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px 4px rgba (0, 0, 0, 0.4);
 }
