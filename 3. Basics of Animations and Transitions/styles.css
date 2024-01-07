@@ -60,8 +60,8 @@ Set more key frames between 0% and 100%. */
 /* DONE: Try the different timing funcitons such as linear, ease-in, ease-in-out, cubic-bezier, and steps*/
 .todo-2-container .box{
     background-color: #dda15e;
-    color: black;
-    animation: scaleUpDown 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite alternate;
+    color: white;
+    animation: scaleUpDown 2s cubic-bezier(0.68, -0.55, 0.25, 2.00) infinite alternate;
 }
 
 /* Done: Create a transition that will raise the button up and will make it cast a shadow when you hover over the button */
@@ -72,5 +72,5 @@ Set more key frames between 0% and 100%. */
 
 .todo-3-container button:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 10px 4px rgba (0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 4px rgba (0, 0, 1, 0.4);
 }
